@@ -40,9 +40,9 @@ const Login = () => {
     <Container className="d-flex justify-content-center align-items-center" style={{ minHeight: '100vh' }}>
       <Row className="w-100 justify-content-center">
         <Col md={6} lg={4}>
-          {/* Centered Form with Box Shadow */}
+          
           <div style={{ boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', padding: '2rem', borderRadius: '8px', backgroundColor: '#fff' }}>
-            {/* Login Form */}
+         
             <Form onSubmit={handleSubmit}>
               <Form.Group controlId="formBasicEmail">
                 <Form.Label>Email address</Form.Label>
@@ -92,7 +92,7 @@ const Login = () => {
               <Toast.Body>{errorMessage}</Toast.Body>
             </Toast>
 
-            {/* Toast for showing success messages */}
+      
             <Toast
               show={showSuccessToast}
               onClose={() => setShowSuccessToast(false)}

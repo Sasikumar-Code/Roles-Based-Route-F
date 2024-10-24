@@ -20,18 +20,15 @@ const CustomNavbar = () => {
   return (
     <Navbar bg="secondary" variant="dark" expand="lg" collapseOnSelect>
       <Container>
-        {/* Navbar Brand */}
         <Navbar.Brand>
           <FiHome className="me-2" />
         </Navbar.Brand>
 
-        {/* Toggle button for mobile view */}
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
             {token ? (
               <>
-                {/* Conditional Dropdown based on role */}
                 {role === 'Admin' && (
                   <NavDropdown title="Admin" id="admin-nav-dropdown">
                     <NavDropdown.Item as={Link} to="/admin-dashboard">
@@ -54,8 +51,6 @@ const CustomNavbar = () => {
                   </NavDropdown>
                 )}
 
-
-                {/* Logout Button */}
                 <Button
                   variant="outline-light"
                   className="ms-3"
@@ -66,7 +61,6 @@ const CustomNavbar = () => {
               </>
             ) : (
               <>
-                {/* Links for users not logged in */}
                 <Nav.Link as={Link} to="/">
                   Login
                 </Nav.Link>
