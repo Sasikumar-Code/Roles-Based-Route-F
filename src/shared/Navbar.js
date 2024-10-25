@@ -53,7 +53,7 @@ const CustomNavbar = () => {
 
                 <Button
                   variant="outline-light"
-                  className="ms-3 mt-3"
+                  className="ms-3 mt-1"
                   onClick={handleLogout}
                 >
                   <FiLogOut className="me-2" /> Logout
