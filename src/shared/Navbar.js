@@ -3,8 +3,8 @@
 import React from 'react';
 import { Navbar, Nav, Container, NavDropdown, Button } from 'react-bootstrap';
 import { useNavigate, Link } from 'react-router-dom';
-import { FiLogOut, FiHome } from 'react-icons/fi'; // Import icons from react-icons
-import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
+import { FiLogOut, FiHome } from 'react-icons/fi'; 
+import 'bootstrap/dist/css/bootstrap.min.css'; 
 
 const CustomNavbar = () => {
   const navigate = useNavigate();
@@ -53,7 +53,7 @@ const CustomNavbar = () => {
 
                 <Button
                   variant="outline-light"
-                  className="ms-3"
+                  className="ms-3 mt-3"
                   onClick={handleLogout}
                 >
                   <FiLogOut className="me-2" /> Logout
